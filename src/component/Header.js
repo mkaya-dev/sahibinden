@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import resim from "../resimler/bmw.png"
 import resim1 from "../resimler/mercedes.jpg"
 import resim2 from "../resimler/skoda.jpg"
@@ -9,7 +10,7 @@ import resim5 from "../resimler/ford.jpg"
 const Header = () => {
     return (
 
-        <div className="card-group">
+        <Link to="/" ><div className="card-group">
             <div className="card ">
                 <img src={resim} className="card-img-top" alt="..." />
 
@@ -35,6 +36,7 @@ const Header = () => {
 
             </div>
         </div>
+        </Link>
     )
 }
 
