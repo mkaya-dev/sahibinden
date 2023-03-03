@@ -2,24 +2,46 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from 'react-router-dom';
 import Header from "../component/Header";
 import MarkaList from "../component/MarkaList";
+import PuffLoader from "react-spinners/PuffLoader";
+
 import "./All.css"
 
 const Valor = () => {
+
+    const [loading, setLoading] = useState(false);
+
 
     let { modelld, markald, yil } = useParams();
     const [ages, setAgess] = useState([]);
     useEffect(() => {
         const apicek = `https://parallelum.com.br/fipe/api/v1/carros/marcas/${markald}/modelos/${modelld}/anos/${yil}`
+        setLoading(true)
+
         fetch(apicek)
             .then(but => but.json())
             .then(but => {
                 setAgess(but)
+                setLoading(false)
+
             })
     }, [modelld, markald, yil])
 
     return (
         <div>
             <Header />
+            {loading ?
+
+                <PuffLoader
+
+
+
+                    color={"blue"}
+                    loading={loading}
+                    size={100}
+
+                />
+
+                :
             <ul class="sol classifiedInfoList">
 
                 <li>
@@ -69,6 +91,7 @@ const Valor = () => {
                         {ages.SiglaCombustivel}</span>
                 </li>
             </ul>
+}
             <Link to={`/Model/${markald}/Anos/${modelld}`}><button className="button-hareket renk btn btn-outline-dark"><i class="fa-solid fa-chevron-left"></i></button></Link>
 
             <div className="sag">
@@ -83,7 +106,7 @@ const Valor = () => {
             
 
             </div>
-            )
+    )
 }
 
-            export default Valor;
+export default Valor;

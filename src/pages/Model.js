@@ -19,7 +19,6 @@ const Model = () => {
     useEffect(() => {
         const apicek = `https://parallelum.com.br/fipe/api/v1/carros/marcas/${markald}/modelos`
         setLoading(true)
-
         fetch(apicek)
             .then(Modelos => Modelos.json())
             .then(Modelos => {
@@ -32,10 +31,10 @@ const Model = () => {
 
 
 
-    useEffect(() => {
-        setTimeout(() => {
-        }, 2000)
-    }, []);
+   // useEffect(() => {
+        //setTimeout(() => {
+        //}, 2000)
+   // }, []);
 
 
     const searchModel = (modelAdi) => {
