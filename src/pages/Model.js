@@ -61,7 +61,7 @@ const Model = () => {
 
             {loading ?
 
-                <PuffLoader
+                <PuffLoader className="orta"
 
 
 

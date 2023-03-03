@@ -48,7 +48,7 @@ const Anos = () => {
 
             {loading ?
 
-                <PuffLoader
+                <PuffLoader className="orta"
 
 
 

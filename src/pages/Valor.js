@@ -31,7 +31,7 @@ const Valor = () => {
             <Header />
             {loading ?
 
-                <PuffLoader
+                <PuffLoader className="orta"
 
 
 

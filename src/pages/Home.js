@@ -52,13 +52,13 @@ const Home = () => {
 
             {loading ?
 
-                <PuffLoader
-
+                <PuffLoader className="orta"
 
 
                     color={"blue"}
                     loading={loading}
                     size={100}
+                
 
                 />
 
