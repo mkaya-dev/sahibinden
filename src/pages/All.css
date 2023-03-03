@@ -33,6 +33,10 @@
     background: black;
 }
 
+.ekran:hover{
+    opacity: 8.5;
+}
+
 .classifiedInfoList li {
     display: block;
     text-decoration: none;

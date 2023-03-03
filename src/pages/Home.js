@@ -5,6 +5,7 @@ import SearchBar from "../component/SearchBar";
 import PuffLoader from "react-spinners/PuffLoader";
 
 import "./All.css";
+import Slayt from "../component/Slayt";
 
 const Home = () => {
 
@@ -48,6 +49,7 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <Slayt/>
             <SearchBar placeholder="Marka Ara.." data={markaName} setData={searchMarka} />
 
             {loading ?
