@@ -10,25 +10,25 @@ import "../pages/All.css"
 const Slayt = () => {
     return (
         <div className="ekran">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style={{backgroundColor: "black"}}>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={resim1}class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim1}class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={resim2} class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim2} class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={resim3} class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim3} class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={resim4} class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim4} class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={resim5} class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim5} class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={resim6} class="d-block" style={{width:1600,height:680}} alt="..."/>
+                        <img src={resim6} class="d-block" style={{ height: 540, margin: 'auto' }}  alt="..."/>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
