@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import SearchBar from "../component/SearchBar";
 import PuffLoader from "react-spinners/PuffLoader";
-
 import "./All.css";
 import Slayt from "../component/Slayt";
-
 const Home = () => {
 
     const [marka, setMarkalar] = useState([]);
@@ -49,7 +47,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <Slayt/>
+            <Slayt />
             <SearchBar placeholder="Marka Ara.." data={markaName} setData={searchMarka} />
 
             {loading ?
