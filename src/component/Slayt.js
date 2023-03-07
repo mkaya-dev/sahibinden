@@ -4,7 +4,6 @@ import resim2 from "../resimler/araba2.jpg";
 import resim3 from "../resimler/araba3.jpg";
 import resim4 from "../resimler/araba4.jpg";
 import resim5 from "../resimler/araba5.jpg";
-import resim6 from "../resimler/araba6.jpg";
 
 
 
@@ -17,7 +16,6 @@ const Slayt =() =>{
         {url:resim3},
         {url:resim4},
         {url:resim5},
-        {url:resim6}
 
     ];
     const containerStyles ={

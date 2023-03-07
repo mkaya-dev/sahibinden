@@ -27,6 +27,7 @@ const ImageSlider = ({ slides }) => {
         color:"white",
         zIndex:1,
         cursor:"pointer",
+        
     };
 
     const rightArrowStyles ={
