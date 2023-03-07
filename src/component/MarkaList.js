@@ -8,7 +8,7 @@ const MarkaList = () => {
     useEffect(() => {
         const apicek = "https://parallelum.com.br/fipe/api/v1/carros/marcas"
         fetch(apicek)
-            .then(tem => tem.json())
+            .then(tem => tem.json())    
             .then(tem => {
                 setListeleme(tem)
             })

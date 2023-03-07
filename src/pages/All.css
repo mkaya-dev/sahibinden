@@ -20,6 +20,10 @@
     width: 400px;
 }
 
+.container{
+    margin-left: 50px;
+}
+
 .cizgi-renk:hover {
     transform: scale(0.9);
     background-color: white;
@@ -30,7 +34,7 @@
 
 .renk {
     font-size: 15px;
-    float: right;
+    
 }
 
 .card {
@@ -64,9 +68,7 @@
     text-align: left;
 }
 
-.button-hareket {
-    float: right;
-}
+
 
 .yazi-ortalama {
     text-align: center;
