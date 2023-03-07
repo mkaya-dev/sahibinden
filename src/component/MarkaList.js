@@ -19,8 +19,8 @@ const MarkaList = () => {
             <h4 className="yazi-ortalama">Modeller</h4>  
                 {
                     liste.map(butonlar =>
-                        <div>
-                            <Link to={`/model/${butonlar.codigo}`} ><button className="btn btn-light" style={{color:"black"}}>{butonlar.nome}</button></Link>
+                        <div >
+                            <Link to={`/model/${butonlar.codigo}`} ><button className=" btn btn-light" style={{color:"black"}}>{butonlar.nome}</button></Link>
                         </div> 
                     )
                 }

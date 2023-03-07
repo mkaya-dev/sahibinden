@@ -92,7 +92,7 @@ const Model = () => {
             <Link to="/"><button className="renk btn btn-outline-dark"><i class="fa-solid fa-chevron-left"></i></button></Link>
             <div className="sag">
 
-                <MarkaList />
+                <MarkaList  />
 
             </div>
         </div>
