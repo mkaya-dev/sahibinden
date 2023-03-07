@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from "../component/Header";
 import MarkaList from "../component/MarkaList";
 import PuffLoader from "react-spinners/PuffLoader";
+import resim1 from "../resimler/araba1.jpg";
 
 import "./All.css"
 
@@ -28,7 +29,7 @@ const Valor = () => {
 
     return (
         <div>
-            <Header />
+            <Header /><br/><br/><br/>
             {loading ?
 
                 <PuffLoader className="orta"

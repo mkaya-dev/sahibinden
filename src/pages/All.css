@@ -16,6 +16,10 @@
 
 }
 
+.ortalama{
+    width: 400px;
+}
+
 .cizgi-renk:hover {
     transform: scale(0.9);
     background-color: white;
